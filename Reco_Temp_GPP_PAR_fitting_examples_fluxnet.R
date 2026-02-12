@@ -21,7 +21,7 @@ ec_data_sub <- fluxnet_data %>%
   mutate(across(everything(), ~na_if(., -9999))) %>%
   mutate(
     datetime = ymd_hm(as.character(TIMESTAMP_END)),
-    Temp = TS_F_MDS_1, # or TA_F for air temp
+    Temp = TS_F_MDS_1, # or TA_F, for air temp
     PARin = PPFD_IN,
     Reco = RECO_NT_VUT_REF,
     GPP = GPP_NT_VUT_REF
