@@ -182,8 +182,8 @@ plot_gpp_response <- function(fit_result) {
               color = "blue", linewidth = 1) +
     annotate("text", x = 1900, y = -0.5, label = labels_text,
              hjust = 1, vjust = 1, size = 3.5) +
-    scale_x_continuous(limits = c(0, 2000)) +
-    scale_y_continuous(limits = c(-8, 0)) +
+    # scale_x_continuous(limits = c(0, 2000)) +
+    # scale_y_continuous(limits = c(-8, 0)) +
     labs(x = expression("PAR ("*mu*mol~m^-2~s^-1*")"),
          y = expression(GPP~"("*mu*mol~CO[2]~m^-2~s^-1*")")) +
     theme_test() +
